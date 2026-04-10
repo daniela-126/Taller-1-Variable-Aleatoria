@@ -1,6 +1,6 @@
 ---
 title: "VARIABLE ALEATORIA Y DISTRIBUCIÓN DE PROBABILIDAD"
-subtitle: "TALLER 1"
+subtitle: "TALLER"
 author: 
   - name: Daniela Monje Bonilla <br> Paula Dayana Matta Ramos
     affiliation: "Universidad del Tolima"
@@ -25,6 +25,8 @@ format:
     link-external-newwindow: true
     code-overflow: scroll
     favicon: favicon.ico
+    output-file: "index.html"
+    title: "Taller 1 Variable Aleatoria"
     
 editor: visual
 
