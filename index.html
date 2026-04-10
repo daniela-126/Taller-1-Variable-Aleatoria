@@ -607,7 +607,8 @@ Distribución de Probabilidad
 </div>
 </div>
 </div>
-<p><strong>a.</strong> <span class="math inline">P(X=2)=f(2)=0.20</span></p>
+<p><strong>a.</strong> Probabilidad de <span class="math inline">P(X=2)</span></p>
+<p><span class="math inline">P(X=2)=f(2)=0.20</span></p>
 <p>Código R</p>
 <div class="cell" data-layout-align="center">
 <details class="code-fold">
@@ -622,8 +623,9 @@ Distribución de Probabilidad
 <pre><code>[1] 0.2</code></pre>
 </div>
 </div>
-<p><strong>b.</strong><br>
-<span class="math display">P(X≥3) = f(3)+f(4)+f(5)+f(6)
+<p><strong>Interpretación:</strong> Existe una probabilidad de 0.20 (20%) de que un automóvil seleccionado al azar presente exactamente dos defectos importantes en su fabricación.</p>
+<p><strong>b.</strong> Probabilidad de <span class="math inline">P(X≥3)</span></p>
+<p><span class="math display">P(X≥3) = f(3)+f(4)+f(5)+f(6)
 =0.28+0.25+0.05+0.03
 =0.61</span></p>
 <p>Código R</p>
@@ -640,7 +642,9 @@ Distribución de Probabilidad
 <pre><code>[1] 0.61</code></pre>
 </div>
 </div>
-<p><strong>c.</strong> <span class="math display">P(2≤X≤5)
+<p><strong>Interpretación:</strong> El 61% de los vehículos nuevos inspeccionados tienden a presentar tres o más defectos importantes, lo que indica que la mayoría de la producción supera el umbral de los dos errores.</p>
+<p><strong>c.</strong> Probabilidad del intervalo <span class="math inline">P(2≤X≤5)</span></p>
+<p><span class="math display">P(2≤X≤5)
 =f(2)+f(3)+f(4)+f(5)
 =0.20+0.28+0.25+0.05
 =0.78</span></p>
@@ -658,7 +662,9 @@ Distribución de Probabilidad
 <pre><code>[1] 0.78</code></pre>
 </div>
 </div>
-<p><strong>d.</strong> <span class="math display">P(2&lt;X&lt;5)
+<p><strong>Interpretación:</strong> El 78% de los automóviles se sitúa en un rango de fallas que va desde los 2 hasta los 5 defectos inclusive, concentrando allí la mayor parte de la distribución de probabilidad.</p>
+<p><strong>d.</strong> Probabilidad del intervalo <span class="math inline">P(2&lt;X&lt;5)</span></p>
+<p><span class="math display">P(2&lt;X&lt;5)
 =f(3)+f(4)
 =0.28+0.25
 =0.53</span></p>
@@ -676,15 +682,20 @@ Distribución de Probabilidad
 <pre><code>[1] 0.53</code></pre>
 </div>
 </div>
-<p><strong>e.</strong></p>
+<p><strong>Interpretación:</strong> El 53% de la muestra (poco más de la mitad) presenta estrictamente 3 o 4 defectos, excluyendo los valores extremos del intervalo de estudio.</p>
+<p><strong>e.</strong> Medidas de tendencia central y dispersión</p>
 <p>1 Esperanza: <span class="math inline">E[X]=∑xf(x)</span></p>
 <p><span class="math display">E[X]=0(0.06)+1(0.13)+2(0.20)+3(0.28)+4(0.25)+5(0.05)+6(0.03)</span> <span class="math inline">𝐸[𝑋]=2.80</span></p>
+<p><strong>Interpretación:</strong> En promedio, se espera encontrar 2.80 defectos por cada automóvil nuevo. Es el valor representativo del número de fallas que se obtendría tras realizar múltiples observaciones a largo plazo.</p>
 <p>2 Varianza: <span class="math inline">Var(X)=∑(x−μ)2f(x)</span></p>
 <p><span class="math inline">Var(X)=1.94</span></p>
+<p><strong>Interpretación:</strong> El valor de 1.94 indica el grado de dispersión de los datos respecto a la media. Al ser distinta de cero, confirma que hay una variabilidad interna en el proceso de calidad, donde los defectos no son constantes entre un auto y otro.</p>
 <p>3 Desviación Estándar:</p>
 <p><span class="math inline">σ=Var(X)=1.3928</span></p>
+<p><strong>Interpretación:</strong> El número de defectos en un automóvil típico suele desviarse, por encima o por debajo, en aproximadamente 1.39 unidades respecto al promedio esperado (2.80).</p>
 <p>4 Coeficiente de Variación:</p>
 <p><span class="math inline">CV=μ/σ=1.3928/2.80=0.4974</span></p>
+<p><strong>Interpretación:</strong> La variabilidad del número de defectos representa el 49.7% del valor de la media, lo que indica que los datos tienen una dispersión moderadamente alta en relación con su promedio.</p>
 <p>Código R</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
 <ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true" href="">Esperanza</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false" href="">Varianza</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-3" role="tab" aria-controls="tabset-2-3" aria-selected="false" href="">Desviación Estandar</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-4" role="tab" aria-controls="tabset-2-4" aria-selected="false" href="">Coeficiente de Variación</a></li></ul>
@@ -753,6 +764,7 @@ Distribución de Probabilidad
 <p><em>SOLUCIÓN</em></p>
 <p><strong>a.</strong> Soporte de la variable aleatoria <span class="math inline">X</span></p>
 <p>El soporte <span class="math inline">S_X</span> es el conjunto de valores posibles que puede tomar la suma de dos dados (desde <span class="math inline">1+1</span> hasta <span class="math inline">6+6</span>): <span class="math display">S_X = \{2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12\}</span></p>
+<p><strong>Interpretación:</strong> El soporte nos indica que el resultado de la suma solo puede oscilar entre 2 y 12. Es físicamente imposible obtener una suma de 1 o superior a 12 con dos dados convencionales.</p>
 <p><strong>b.</strong> Función de probabilidad y diagrama de barras</p>
 <p>Primero se generá el espacio muestral completo (<span class="math inline">n=36</span>) para calcular las probabilidades exactas <span class="math inline">f(x) = P(X=x)</span>.</p>
 <div class="cell" data-layout-align="center">
@@ -882,6 +894,7 @@ Figura&nbsp;1: Diagrama de barras de la función de probabilidad
 </div>
 </div>
 </div>
+<p><strong>Interpretación:</strong> La distribución es simétrica. La probabilidad más alta corresponde a la suma de 7 (<span class="math inline">16.67\%</span>), ya que es el valor que tiene más combinaciones posibles en los dados. A medida que nos alejamos del 7 hacia los extremos (2 o 12), la probabilidad disminuye drásticamente.</p>
 <p><strong>c</strong> La función de distribución acumulada está dada por:</p>
 <p><span class="math inline">F(x) = P(X \le x)</span></p>
 <p>Se construye mediante los valores acumulados de <span class="math inline">f(x)</span>.</p>
@@ -1073,7 +1086,8 @@ Distribución de X: f(x) y F(x)
 </div>
 </div>
 </div>
-<p><strong>d.</strong></p>
+<p><strong>Interpretación:</strong> Esta función nos permite ver cómo se “acumula” la certeza. Por ejemplo, al llegar a la suma de 7, ya hemos cubierto el 58.33% de todos los resultados posibles. El 100% de la probabilidad se alcanza, como es debido, al llegar al valor máximo (12).</p>
+<p><strong>d.</strong> Probabilidad del intervalo <span class="math inline">P(4 &lt; X &lt; 8)</span></p>
 <p><span class="math inline">P(4 &lt; X &lt; 8) = f(5) + f(6) + f(7)</span></p>
 <div class="cell" data-layout-align="center">
 <details class="code-fold">
@@ -1085,8 +1099,13 @@ Distribución de X: f(x) y F(x)
 <pre><code>[1] 0.4166667</code></pre>
 </div>
 </div>
-<p><strong>e.</strong></p>
-<p><span class="math inline">P(4 \le X \le 8) = P(X=4) + P(X=5) + P(X=6) + P(X=7) + P(X=8)= \frac{3}{36} + \frac{4}{36} + \frac{5}{36}+\frac{6}{36} + \frac{5}{36}= \frac{23}{36} \approx 0.6389</span></p>
+<p><strong>Interpretación:</strong> Existe una probabilidad del 41.67% de que la suma sea un 5, 6 o 7. Esto significa que en casi 4 de cada 10 lanzamientos, el resultado estará en este rango intermedio (sin incluir los extremos 4 y 8).</p>
+<p><strong>e.</strong> Probabilidad del intervalo <span class="math inline">P(4 \leq X \leq 8)</span></p>
+<p><span class="math display">\begin{align*}
+P(4 \le X \le 8) &amp;= P(X=4) + P(X=5) + P(X=6) + P(X=7) + P(X=8) \\
+                 &amp;= \frac{3}{36} + \frac{4}{36} + \frac{5}{36} + \frac{6}{36} + \frac{5}{36} \\
+                 &amp;= \frac{23}{36} \approx 0.6389
+\end{align*}</span></p>
 <div class="cell" data-layout-align="center">
 <details class="code-fold">
 <summary>Ver código</summary>
@@ -1097,7 +1116,8 @@ Distribución de X: f(x) y F(x)
 <pre><code>[1] 0.6388889</code></pre>
 </div>
 </div>
-<p><strong>f.</strong></p>
+<p><strong>Interpretación:</strong> Al incluir los extremos (4 y 8), la probabilidad sube al 63.89%. Es decir, es más probable que la suma esté entre 4 y 8 a que esté fuera de ese rango.</p>
+<p><strong>f.</strong> Medidas de tendencia central y dispersión</p>
 <ol type="1">
 <li>Esperanza:</li>
 </ol>
@@ -1105,6 +1125,7 @@ Distribución de X: f(x) y F(x)
 <p><span class="math display">E[X] = \sum_{i=1}^{n} x_i \cdot P(X = x_i)</span></p>
 <p>Sustituyendo los valores del problema:</p>
 <p><span class="math display">E[X] = \left(2 \cdot \frac{1}{36}\right) + \left(3 \cdot \frac{2}{36}\right) + \dots + \left(12 \cdot \frac{1}{36}\right) = 7</span></p>
+<p><strong>Interpretación:</strong> El valor esperado es 7. Si lanzaras los dados miles de veces, el promedio aritmético de todas esas sumas convergería exactamente a 7. Es el “centro de gravedad” de la distribución.</p>
 <ol start="2" type="1">
 <li>Varianza:</li>
 </ol>
@@ -1112,18 +1133,21 @@ Distribución de X: f(x) y F(x)
 <p><span class="math display">E[X^2] = \sum_{i=1}^{n} x_i^2 \cdot P(X = x_i)</span></p>
 <p>Luego, aplicamos la fórmula de la varianza: <span class="math display">Var(X) = E[X^2] - (E[X])^2</span></p>
 <p>Sustituyendo los valores: <span class="math display">Var(X) = \frac{1974}{36} - 7^2 = 54.833 - 49 = 5.833</span></p>
+<p><strong>Interpretación:</strong> Este valor cuantifica la dispersión de las sumas. Al ser de 5.83, nos indica que los resultados no están tan apretados alrededor del 7, sino que hay una variabilidad natural debido a las 36 combinaciones posibles del espacio muestral.</p>
 <ol start="3" type="1">
 <li>Desviación Típica:</li>
 </ol>
 <p>La desviación típica es la raíz cuadrada de la varianza:</p>
 <p><span class="math display">\sigma = \sqrt{Var(X)}</span></p>
 <p><span class="math display">\sigma = \sqrt{5.833} \approx 2.415</span></p>
+<p><strong>Interpretación:</strong> En un lanzamiento típico, la suma suele alejarse del promedio (7) en aproximadamente 2.4 unidades. Esto significa que la mayoría de los resultados suelen estar entre 4.6 y 9.4.</p>
 <p>4 Coeficiente de Variación</p>
 <p>La fórmula general para el coeficiente de variación es:</p>
 <p><span class="math display">CV = \frac{\sigma}{E[X]} \cdot 100\%</span></p>
 <p>Sustituyendo los valores que obtuvimos en el punto <strong>(f)</strong> <span class="math inline">E[X] = 7</span> y <span class="math inline">\sigma \approx 2.415</span>:</p>
 <p><span class="math display">CV = \frac{2.415}{7} \cdot 100\%</span></p>
 <p><span class="math display">CV \approx 0.345 \cdot 100\% = 34.5\%</span></p>
+<p><strong>Interpretación:</strong> La variabilidad de la suma representa el 34.5% en relación con el promedio. Es una variabilidad moderada, lo que confirma que, aunque el 7 es lo más común, el azar todavía tiene un margen amplio para ofrecer resultados distintos en cada tiro.</p>
 <p>Código R</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
 <ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-3-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-1" role="tab" aria-controls="tabset-3-1" aria-selected="true" href="">Esperanza</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-2" role="tab" aria-controls="tabset-3-2" aria-selected="false" href="">Varianza</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-3" role="tab" aria-controls="tabset-3-3" aria-selected="false" href="">Desviación Estándar</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-4" role="tab" aria-controls="tabset-3-4" aria-selected="false" href="">Coeficiente de Variación</a></li></ul>
@@ -1240,6 +1264,7 @@ Distribución de X: f(x) y F(x)
 </div>
 </div>
 </div>
+<p><strong>Interpretación:</strong> Al sumar el área bajo la curva de los dos rectángulos (<span class="math inline">1/3</span> de ancho 1 y <span class="math inline">1/3</span> de ancho 2), el resultado es exactamente 1. Esto confirma que el modelo es matemáticamente válido y representa la totalidad de los casos posibles.</p>
 <p><strong>b.</strong> Obtener la función de distribución <span class="math inline">F(x)</span> y graficarla</p>
 <p><span class="math display">F(x)=
 \begin{cases}
@@ -1274,6 +1299,7 @@ Distribución de X: f(x) y F(x)
 </div>
 </div>
 </div>
+<p><strong>Interpretación:</strong> La probabilidad crece de forma lineal en los tramos donde existe densidad y se mantiene constante (en 0.33) entre el valor 1 y el 2. Esto indica que es imposible obtener un resultado en ese “hueco”, por lo que la probabilidad acumulada no aumenta en ese intervalo.</p>
 <p><strong>c.</strong> Calcular <span class="math inline">P(X &lt; 0.6)</span></p>
 <p><span class="math inline">P(X&lt;0.6) = \int_{0}^{0.6} \frac{1}{3},dx= \frac{1}{3}(0.6) = 0.2</span></p>
 <p>Código R</p>
@@ -1287,6 +1313,7 @@ Distribución de X: f(x) y F(x)
 <pre><code>[1] 0.2</code></pre>
 </div>
 </div>
+<p><strong>Interpretación:</strong> Existe un 20% de probabilidad de que la variable tome un valor en la primera parte de su rango, específicamente entre 0 y 0.6.</p>
 <p><strong>d.</strong> Calcular <span class="math inline">P(0.3 \le X \le 0.6)</span></p>
 <p><span class="math display">P(0.3 \le X \le 0.6)
 = \int_{0.3}^{0.6} \frac{1}{3},dx
@@ -1302,6 +1329,7 @@ Distribución de X: f(x) y F(x)
 <pre><code>[1] 0.1</code></pre>
 </div>
 </div>
+<p><strong>Interpretación:</strong> Solo el 10% de las observaciones caerán en este pequeño segmento. Al ser una variable continua, la probabilidad es proporcional al ancho del intervalo dentro de su densidad.</p>
 <p><strong>e.</strong> Calcular <span class="math inline">P(0.6 &lt; X &lt; 3.4)</span></p>
 <p>El intervalo cruza dos tramos:</p>
 <ul>
@@ -1309,7 +1337,13 @@ Distribución de X: f(x) y F(x)
 <li>De (2) a (3.4)</li>
 </ul>
 <p><span class="math inline">P(0.6&lt;X&lt;3.4)</span></p>
-<p><span class="math inline">\int_{0.6}^{1} \frac{1}{3},dx +\int_{2}^{3.4} \frac{1}{3},dx = \frac{1}{3}(1-0.6) + \frac{1}{3}(3.4-2) = \frac{0.4}{3} + \frac{1.4}{3} = \frac{1.8}{3}=0.6</span></p>
+<p><span class="math display">\begin{align*}
+\int_{0.6}^{1} \frac{1}{3}\,dx + \int_{2}^{3.4} \frac{1}{3}\,dx
+&amp;= \frac{1}{3}(1 - 0.6) + \frac{1}{3}(3.4 - 2) \\
+&amp;= \frac{0.4}{3} + \frac{1.4}{3} \\
+&amp;= \frac{1.8}{3} \\
+&amp;= 0.6
+\end{align*}</span></p>
 <p>Código R</p>
 <div class="cell" data-layout-align="center">
 <details class="code-fold">
@@ -1321,6 +1355,7 @@ Distribución de X: f(x) y F(x)
 <pre><code>[1] 0.6</code></pre>
 </div>
 </div>
+<p><strong>Interpretación:</strong> El 60% de los datos se encuentran en este rango. Esta medida es alta porque abarca el final del primer tramo y casi todo el segundo tramo de la variable.</p>
 <p><strong>f.</strong> Rango intercuartílico</p>
 <p><span class="math display">Q_1 = 0.75,\qquad Q_3 = 3.25, \qquad RI = Q_3 - Q_1 = 3.25 - 0.75 = 2.5</span></p>
 <p>Código R</p>
@@ -1336,6 +1371,7 @@ Distribución de X: f(x) y F(x)
 <pre><code>[1] 2.5</code></pre>
 </div>
 </div>
+<p><strong>Interpretación:</strong> El 50% central de los datos (entre el primer y tercer cuartil) tiene una extensión de 2.5 unidades. Esto nos da una idea del “ancho” donde se concentra la mitad de la información.</p>
 <ol type="1">
 <li>Esperanza</li>
 </ol>
@@ -1349,6 +1385,7 @@ E[X]
   + \frac{1}{3}\left(\frac{16-4}{2}\right) \\[6pt]
 &amp;= \frac{1}{6} + 2 = 2.1667.
 \end{aligned}</span></p>
+<p><strong>Interpretación:</strong> El promedio teórico es 2.16. Note que este valor cae en el “hueco” (donde no hay densidad), lo que demuestra que el promedio es simplemente un centro de masa y no necesariamente un valor que la variable pueda tomar frecuentemente.</p>
 <ol start="2" type="1">
 <li><span class="math inline">E[X^2]</span></li>
 </ol>
@@ -1375,14 +1412,17 @@ E[X^{2}]
 &amp;= 6.3333 - 4.6944 \\[6pt]
 &amp;= 1.6389.
 \end{aligned}</span></p>
+<p><strong>Interpretación:</strong> Este valor mide la dispersión global. Al estar la variable dividida en dos bloques separados, la varianza es mayor que si fuera un solo bloque compacto, debido a la distancia entre los tramos.</p>
 <ol start="4" type="1">
 <li>Desviación estándar</li>
 </ol>
 <p><span class="math inline">\sigma = \sqrt{1.6389} = 1.28</span></p>
+<p><strong>Interpretación:</strong> Típicamente, los valores observados se alejan del promedio (2.16) en unas 1.28 unidades. Es la medida estándar de la fluctuación de esta variable.</p>
 <ol start="5" type="1">
 <li>Coeficiente de variación</li>
 </ol>
 <p><span class="math inline">CV = \frac{\sigma}{E[X]} = \frac{1.28}{2.1667}=0.59</span></p>
+<p><strong>Interpretación:</strong> La variabilidad de los datos representa el 59% del valor de la media. Es una dispersión alta, lo cual es lógico ya que los datos están distribuidos en dos zonas muy alejadas entre sí.</p>
 <p>Código en R</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
 <ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-4-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-1" role="tab" aria-controls="tabset-4-1" aria-selected="true" href="">Esperanza</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-2" role="tab" aria-controls="tabset-4-2" aria-selected="false" href="">Segundo momento</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-3" role="tab" aria-controls="tabset-4-3" aria-selected="false" href="">Varianza</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-4" role="tab" aria-controls="tabset-4-4" aria-selected="false" href="">Desviación Estandar</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-5" role="tab" aria-controls="tabset-4-5" aria-selected="false" href="">Coeficiente de Variación</a></li></ul>
@@ -1523,6 +1563,7 @@ x &amp; (0 &lt; x &lt; 1), \\[6pt]
 </div>
 </div>
 </div>
+<p><strong>Interpretación:</strong> La gráfica forma un triángulo perfecto con base 2 y altura 1. El área total es exactamente 1, lo que confirma que es un modelo de probabilidad completo. Su forma nos dice que los valores centrales (cercanos a 1) son mucho más probables que los extremos (0 o 2).</p>
 <p><strong>b.</strong> Obtener la función de distribución <span class="math inline">F(x)</span></p>
 <p><span class="math display">F(x)=
 \begin{cases}
@@ -1555,6 +1596,7 @@ x &amp; (0 &lt; x &lt; 1), \\[6pt]
 </div>
 </div>
 </div>
+<p><strong>Interpretación:</strong> La probabilidad acumulada no crece de forma recta, sino curva (parabólica). Esto refleja que la probabilidad “pesa” más en el centro; al principio crece lento, luego muy rápido cerca del 1, y se estabiliza al acercarse al 2.</p>
 <p><strong>c.</strong> Calcular la esperanza y la varianza</p>
 <p>1 Esperanza</p>
 <p><span class="math display">\begin{aligned}
@@ -1565,6 +1607,7 @@ E[X]
 &amp;= \frac{1}{3} + \big(4 - \tfrac{8}{3}\big) - \big(1 - \tfrac{1}{3}\big) \\[6pt]
 &amp;= \frac{1}{3} + \frac{4}{3} - \frac{2}{3} = 1
 \end{aligned}</span></p>
+<p><strong>Interpretación:</strong> El promedio teórico es exactamente 1. Debido a la simetría perfecta del triángulo, el centro de masa coincide con el pico de la montaña; es el valor más esperado a largo plazo.</p>
 <p>2 Segundo momento</p>
 <p><span class="math display">E[X^2] = \int_0^1 x^3,dx + \int_1^2 x^2(2-x),dx
 = \frac14 + \frac{11}{12}
@@ -1576,10 +1619,13 @@ E[X]
 <p><span class="math inline">E[X]=1, \qquad E[X^2]=\frac{7}{6}</span></p>
 <p>Entonces:</p>
 <p><span class="math display">\operatorname{Var}(X)=\frac{7}{6}-1^2=\frac{7}{6}-1 =\frac{7}{6}-\frac{6}{6} =\frac{1}{6}</span></p>
+<p><strong>Interpretación:</strong> Este valor es pequeño (<span class="math inline">1/6</span>), lo que indica que los datos están muy concentrados alrededor del 1. Hay poca dispersión; es raro encontrar valores muy alejados del centro.</p>
 <p>4 Desviación estándar</p>
 <p><span class="math display">\sigma_X = \sqrt{\operatorname{Var}(X)} = \sqrt{\frac{1}{6}} = \frac{1}{\sqrt{6}}</span></p>
+<p><strong>Interpretación:</strong> Un valor típico de esta variable suele estar a solo 0.40 unidades de distancia del promedio. Es una distribución bastante precisa.</p>
 <p>5 Coeficiente de variación</p>
 <p><span class="math display">CV = \frac{\sigma_X}{E[X]} = \frac{\frac{1}{\sqrt{6}}}{1} = \frac{1}{\sqrt{6}}</span></p>
+<p><strong>Interpretación:</strong> La variabilidad de los datos representa el 40.8% del valor de la media. En estadística, este porcentaje nos indica una dispersión moderada.</p>
 <p>Código R</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
 <ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-5-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-5-1" role="tab" aria-controls="tabset-5-1" aria-selected="true" href="">Esperanza</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-5-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-5-2" role="tab" aria-controls="tabset-5-2" aria-selected="false" href="">Segundo momento</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-5-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-5-3" role="tab" aria-controls="tabset-5-3" aria-selected="false" href="">Varianza</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-5-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-5-4" role="tab" aria-controls="tabset-5-4" aria-selected="false" href="">Desviación Estándar</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-5-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-5-5" role="tab" aria-controls="tabset-5-5" aria-selected="false" href="">coeficiente de Varianza</a></li></ul>
@@ -1688,6 +1734,7 @@ E[X]
 <pre><code>[1] 1.225385</code></pre>
 </div>
 </div>
+<p><strong>Interpretación:</strong> El 30% de los datos son iguales o menores a 0.77. Esto nos marca el límite del grupo más bajo de la muestra y el 70% de los datos son menores a 1.23 (o visto de otra forma, el 30% más alto empieza a partir de 1.23).</p>
 <p><br></p>
 </section>
 <section id="ejercicio-5" class="level2" data-number="3.5">
@@ -1731,6 +1778,7 @@ E[X]
 </div>
 </div>
 </div>
+<p><strong>Interpretación:</strong> La gráfica muestra una distribución asimétrica que crece linealmente hasta los 20 p.p.m. y luego desciende más suavemente hasta los 50 p.p.m.</p>
 <p><strong>b.</strong> Demostrar que <span class="math inline">f(x)</span> es una función de densidad</p>
 <p>Debe cumplirse:</p>
 <p><span class="math inline">\int_{-\infty}^{\infty} f(x),dx = 1</span></p>
@@ -1765,6 +1813,7 @@ E[X]
 <pre><code>[1] 1</code></pre>
 </div>
 </div>
+<p><strong>Interpretación:</strong> La gráfica muestra una distribución asimétrica que crece linealmente hasta los 20 p.p.m. y luego desciende más suavemente hasta los 50 p.p.m.</p>
 <p><strong>c.</strong> Probabilidad condicional: personas con plomo &gt; 40 p.p.m. sabiendo que es &gt; 15</p>
 <p><span class="math inline">P(X&gt;40 \mid X&gt;15) = \frac{P(X&gt;40)}{P(X&gt;15)}</span></p>
 <p><span class="math display">\begin{aligned}
@@ -1810,6 +1859,7 @@ P(X &gt; 40)
 <pre><code>[1] 0.08602151</code></pre>
 </div>
 </div>
+<p><strong>Interpretación:</strong> Si ya sabemos que una persona tiene un nivel preocupante (superior a 15 p.p.m.), la probabilidad de que su situación sea aún más grave (superior a 40 p.p.m.) es del 8.6%. Es decir, dentro del grupo de “personas con plomo”, solo una pequeña minoría alcanza niveles extremos.</p>
 <p><strong>d.</strong> Esperanza <span class="math inline">E[X]</span></p>
 <p><span class="math display">
 E[X]
@@ -1842,7 +1892,8 @@ E[X]
 <pre><code>[1] 23.33333</code></pre>
 </div>
 </div>
-<p><strong>e-</strong> Probabilidad de que <span class="math inline">(X &lt; 25)</span></p>
+<p><strong>Interpretación:</strong> El nivel promedio de plomo en la sangre de los habitantes de esta comunidad es de 23.33 p.p.m.. Este es el valor “típico” que esperaríamos encontrar en un chequeo general de la población.</p>
+<p><strong>e.</strong> Probabilidad de que <span class="math inline">(X &lt; 25)</span></p>
 <p><span class="math display">
 P(X&lt;25)
 = \int_{0}^{20}\frac{x}{500}\,dx
@@ -1877,9 +1928,10 @@ P(X&lt;25)
 <pre><code>[1] 0.5833333</code></pre>
 </div>
 </div>
-<p><strong>f.</strong>En 40 personas, probabilidad de que entre 15 y 20 tengan <span class="math inline">(X&lt;25)</span></p>
+<p><strong>Interpretación:</strong> Poco más de la mitad de la población (58.33%) tiene niveles de plomo inferiores a 25 p.p.m. Esto nos da una idea de que la mayoría se encuentra en la mitad inferior del rango de exposición.</p>
+<p><strong>f.</strong> En 40 personas, probabilidad de que entre 15 y 20 tengan <span class="math inline">(X&lt;25)</span></p>
 <p>Probabilidad <span class="math inline">(15 \le Y \le 20), con (Y \sim Bin(40, 0.58333)</span></p>
-<p>Para resolver este punto, definimos una nueva variable aleatoria <span class="math inline">Y</span> que representa el número de personas con una cantidad de plomo inferior a <span class="math inline">25</span> p.p.m. en una muestra de <span class="math inline">n = 40</span>.</p>
+<p>Definimos una nueva variable aleatoria <span class="math inline">Y</span> que representa el número de personas con una cantidad de plomo inferior a <span class="math inline">25</span> p.p.m. en una muestra de <span class="math inline">n = 40</span>.</p>
 <p>Como cada elección es independiente, <span class="math inline">Y</span> sigue una distribución binomial: <span class="math display">Y \sim \text{Bin}(n = 40, p = 0.5833)</span></p>
 <p>Debido a que el tamaño de la muestra es grande (<span class="math inline">n \cdot p &gt; 5</span> y <span class="math inline">n(1-p) &gt; 5</span>), aproximamos mediante una distribución normal <span class="math inline">N(\mu, \sigma)</span>:</p>
 <p><span class="math display">\begin{align*}
@@ -1896,7 +1948,6 @@ P(14.5 \le Y \le 20.5) &amp;= P\left( \frac{14.5 - 23.332}{3.118} \le Z \le \fra
 &amp;= 0.1814 - 0.0023 \\
 &amp;= 0.1791
 \end{align*}</span></p>
-<p>La probabilidad de que entre 15 y 20 personas tengan un nivel de plomo inferior a 25 p.p.m. es aproximadamente del 17.91%.</p>
 <p>Código R</p>
 <div class="cell" data-layout-align="center">
 <details class="code-fold">
@@ -1911,6 +1962,7 @@ P(14.5 \le Y \le 20.5) &amp;= P\left( \frac{14.5 - 23.332}{3.118} \le Z \le \fra
 <pre><code>[1] 0.1789535</code></pre>
 </div>
 </div>
+<p><strong>Interpretación:</strong> La probabilidad de que entre 15 y 20 personas tengan un nivel de plomo inferior a 25 p.p.m. es aproximadamente del 17.91%.</p>
 <ol type="1">
 <li><p>Segundo momento <span class="math display">\begin{aligned}
 E[X^2]
@@ -1942,6 +1994,7 @@ E[X^2]
 \sigma^2 &amp;= 650 - 544.429 \\
 \sigma^2 &amp;= 105.571 \text{ (p.p.m.)}^2
 \end{align*}</span></p>
+<p><strong>Interpretación:</strong> Indica una dispersión considerable en los niveles de plomo. Esto significa que la población no es homogénea; hay personas con niveles muy bajos y otras con niveles muy altos, lo que genera esta variabilidad.</p>
 <ol start="3" type="1">
 <li>Desviación estándar</li>
 </ol>
@@ -1950,6 +2003,7 @@ E[X^2]
 \sigma &amp;= \sqrt{105.571} \\
 \sigma &amp;\approx 10.275 \text{ p.p.m.}
 \end{align*}</span></p>
+<p><strong>Interpretación:</strong> En promedio, los niveles de plomo de un individuo varían en 10.27 p.p.m. respecto al promedio de la comunidad (23.33). Esto marca el margen de fluctuación “normal” en la población.</p>
 <ol start="4" type="1">
 <li>Coeficiente de variación</li>
 </ol>
@@ -1958,6 +2012,7 @@ CV &amp;= \left( \frac{\sigma}{\mu} \right) \cdot 100 \\
 CV &amp;= \left( \frac{10.275}{23.333} \right) \cdot 100 \\
 CV &amp;\approx 44.03\%
 \end{align*}</span></p>
+<p><strong>Interpretación:</strong> La variabilidad de los niveles de plomo representa el 44.03% de la media. Es una dispersión moderada-alta, lo que sugiere que factores externos (como la ubicación o la dieta) podrían estar influyendo para que los niveles de plomo cambien tanto entre una persona y otra.</p>
 <p>Código R</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
 <ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-6-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-6-1" role="tab" aria-controls="tabset-6-1" aria-selected="true" href="">Esperanza</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-6-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-6-2" role="tab" aria-controls="tabset-6-2" aria-selected="false" href="">Segundo momento</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-6-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-6-3" role="tab" aria-controls="tabset-6-3" aria-selected="false" href="">Varianza</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-6-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-6-4" role="tab" aria-controls="tabset-6-4" aria-selected="false" href="">Desviación Estandar</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-6-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-6-5" role="tab" aria-controls="tabset-6-5" aria-selected="false" href="">Coeficiente de Variación</a></li></ul>
