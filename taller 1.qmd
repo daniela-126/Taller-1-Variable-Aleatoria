@@ -26,7 +26,7 @@ format:
     code-overflow: scroll
     favicon: favicon.ico
     output-file: "index.html"
-    title: "Taller 1 Variable Aleatoria"
+   
     
 editor: visual
 
